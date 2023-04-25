@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A933027B29F197B50099AD32 /* PhotoGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933027A29F197B50099AD32 /* PhotoGridItemView.swift */; };
+		A933027D29F1A4FE0099AD32 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933027C29F1A4FE0099AD32 /* PhotoDetailView.swift */; };
+		A933027F29F1A7B80099AD32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933027E29F1A7B80099AD32 /* ContentView.swift */; };
+		A933028129F1A8520099AD32 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933028029F1A8520099AD32 /* VideoView.swift */; };
+		A933028929F1BA930099AD32 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933028829F1BA930099AD32 /* NotificationService.swift */; };
+		A933028D29F1BA930099AD32 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A933028629F1BA930099AD32 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A933029429F1BB360099AD32 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = A933029329F1BB360099AD32 /* OneSignal */; };
+		A933029729F1BB550099AD32 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = A933029629F1BB550099AD32 /* OneSignalExtension */; };
+		A933029C29F1CA850099AD32 /* YoutubeXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933029B29F1CA850099AD32 /* YoutubeXMLParser.swift */; };
+		A933029E29F1CAF60099AD32 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933029D29F1CAF60099AD32 /* Playlist.swift */; };
+		A93302A029F1CD1C0099AD32 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933029F29F1CD1C0099AD32 /* VideoViewModel.swift */; };
+		A93302A629F1D0730099AD32 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93302A529F1D0730099AD32 /* VideoListItem.swift */; };
+		A9A7F78B29EF0581002087D6 /* RescueTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F78A29EF0581002087D6 /* RescueTubeApp.swift */; };
+		A9A7F78D29EF0581002087D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F78C29EF0581002087D6 /* HomeView.swift */; };
+		A9A7F78F29EF0582002087D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F78E29EF0582002087D6 /* Assets.xcassets */; };
+		A9A7F79229EF0582002087D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F79129EF0582002087D6 /* Preview Assets.xcassets */; };
+		A9A7F79929EF0634002087D6 /* ManeuversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F79829EF0634002087D6 /* ManeuversView.swift */; };
+		A9A7F7A529EF0651002087D6 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F7A429EF0651002087D6 /* ProductView.swift */; };
+		A9A7F7A729EF0A47002087D6 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7A629EF0A46002087D6 /* location.json */; };
+		A9A7F7A929EF0A4D002087D6 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F7A829EF0A4D002087D6 /* LocationView.swift */; };
+		A9A7F7AD29EF0A70002087D6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F7AC29EF0A70002087D6 /* Utils.swift */; };
+		A9A7F7AF29EF0C1B002087D6 /* UnitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F7AE29EF0C1B002087D6 /* UnitsView.swift */; };
+		A9A7F7BD29EF0C31002087D6 /* life_units.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7B129EF0C31002087D6 /* life_units.png */; };
+		A9A7F7BE29EF0C31002087D6 /* mactubemeasurementsmax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7B229EF0C31002087D6 /* mactubemeasurementsmax.jpg */; };
+		A9A7F7BF29EF0C31002087D6 /* manuvers1t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7B329EF0C31002087D6 /* manuvers1t.jpg */; };
+		A9A7F7C029EF0C31002087D6 /* mactubemeasurements.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7B429EF0C31002087D6 /* mactubemeasurements.jpg */; };
+		A9A7F7C229EF0C31002087D6 /* manuvers4t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7B629EF0C31002087D6 /* manuvers4t.jpg */; };
+		A9A7F7C329EF0C31002087D6 /* manuvers5t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7B729EF0C31002087D6 /* manuvers5t.jpg */; };
+		A9A7F7C429EF0C31002087D6 /* manuvers2t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7B829EF0C31002087D6 /* manuvers2t.jpg */; };
+		A9A7F7C529EF0C31002087D6 /* mactubemeasurementsmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7B929EF0C31002087D6 /* mactubemeasurementsmall.jpg */; };
+		A9A7F7C829EF0C31002087D6 /* manuvers3t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F7BC29EF0C31002087D6 /* manuvers3t.jpg */; };
+		A9A7F7CA29EF1D29002087D6 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F7C929EF1D29002087D6 /* ProductsView.swift */; };
+		A9A7F7CE29EF258E002087D6 /* SpecsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F7CD29EF258E002087D6 /* SpecsListItem.swift */; };
+		A9A7F81829EF3954002087D6 /* 145 in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F81729EF3954002087D6 /* 145 */; };
+		A9A7F81A29EF395B002087D6 /* 175 in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F81929EF395B002087D6 /* 175 */; };
+		A9A7F81C29EF3963002087D6 /* 195 in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F81B29EF3963002087D6 /* 195 */; };
+		A9B4BCBA29F8448F0075FBC1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B4BCB929F8448F0075FBC1 /* Launch Screen.storyboard */; };
+		A9B4BCBC29F845690075FBC1 /* LIFE_Logo_Square.png in Resources */ = {isa = PBXBuildFile; fileRef = A9B4BCBB29F845690075FBC1 /* LIFE_Logo_Square.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A933028B29F1BA930099AD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A7F77F29EF0581002087D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A933028529F1BA930099AD32;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A933029129F1BA930099AD32 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A933028D29F1BA930099AD32 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A933027A29F197B50099AD32 /* PhotoGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridItemView.swift; sourceTree = "<group>"; };
+		A933027C29F1A4FE0099AD32 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		A933027E29F1A7B80099AD32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A933028029F1A8520099AD32 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		A933028629F1BA930099AD32 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A933028829F1BA930099AD32 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A933028A29F1BA930099AD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A933029829F1BB920099AD32 /* RescueTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RescueTube.entitlements; sourceTree = "<group>"; };
+		A933029929F1BB960099AD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A933029A29F1BC410099AD32 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		A933029B29F1CA850099AD32 /* YoutubeXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeXMLParser.swift; sourceTree = "<group>"; };
+		A933029D29F1CAF60099AD32 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		A933029F29F1CD1C0099AD32 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		A93302A529F1D0730099AD32 /* VideoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
+		A9A7F78729EF0581002087D6 /* RescueTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RescueTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A7F78A29EF0581002087D6 /* RescueTubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RescueTubeApp.swift; sourceTree = "<group>"; };
+		A9A7F78C29EF0581002087D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A9A7F78E29EF0582002087D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9A7F79129EF0582002087D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9A7F79829EF0634002087D6 /* ManeuversView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManeuversView.swift; sourceTree = "<group>"; };
+		A9A7F7A429EF0651002087D6 /* ProductView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		A9A7F7A629EF0A46002087D6 /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
+		A9A7F7A829EF0A4D002087D6 /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		A9A7F7AC29EF0A70002087D6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A9A7F7AE29EF0C1B002087D6 /* UnitsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitsView.swift; sourceTree = "<group>"; };
+		A9A7F7B129EF0C31002087D6 /* life_units.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = life_units.png; sourceTree = "<group>"; };
+		A9A7F7B229EF0C31002087D6 /* mactubemeasurementsmax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mactubemeasurementsmax.jpg; sourceTree = "<group>"; };
+		A9A7F7B329EF0C31002087D6 /* manuvers1t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manuvers1t.jpg; sourceTree = "<group>"; };
+		A9A7F7B429EF0C31002087D6 /* mactubemeasurements.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mactubemeasurements.jpg; sourceTree = "<group>"; };
+		A9A7F7B629EF0C31002087D6 /* manuvers4t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manuvers4t.jpg; sourceTree = "<group>"; };
+		A9A7F7B729EF0C31002087D6 /* manuvers5t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manuvers5t.jpg; sourceTree = "<group>"; };
+		A9A7F7B829EF0C31002087D6 /* manuvers2t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manuvers2t.jpg; sourceTree = "<group>"; };
+		A9A7F7B929EF0C31002087D6 /* mactubemeasurementsmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mactubemeasurementsmall.jpg; sourceTree = "<group>"; };
+		A9A7F7BC29EF0C31002087D6 /* manuvers3t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manuvers3t.jpg; sourceTree = "<group>"; };
+		A9A7F7C929EF1D29002087D6 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		A9A7F7CD29EF258E002087D6 /* SpecsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecsListItem.swift; sourceTree = "<group>"; };
+		A9A7F81729EF3954002087D6 /* 145 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 145; sourceTree = "<group>"; };
+		A9A7F81929EF395B002087D6 /* 175 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 175; sourceTree = "<group>"; };
+		A9A7F81B29EF3963002087D6 /* 195 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 195; sourceTree = "<group>"; };
+		A9B4BCB929F8448F0075FBC1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A9B4BCBB29F845690075FBC1 /* LIFE_Logo_Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIFE_Logo_Square.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A933028329F1BA930099AD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933029729F1BB550099AD32 /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A7F78429EF0581002087D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933029429F1BB360099AD32 /* OneSignal in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A933028729F1BA930099AD32 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A933029A29F1BC410099AD32 /* OneSignalNotificationServiceExtension.entitlements */,
+				A933028829F1BA930099AD32 /* NotificationService.swift */,
+				A933028A29F1BA930099AD32 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		A933029529F1BB550099AD32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A93302A129F1CFD50099AD32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A93302A429F1D0310099AD32 /* Photo */,
+				A93302A329F1D0220099AD32 /* Video */,
+				A9A7F78C29EF0581002087D6 /* HomeView.swift */,
+				A9A7F7A829EF0A4D002087D6 /* LocationView.swift */,
+				A9A7F79829EF0634002087D6 /* ManeuversView.swift */,
+				A9A7F7A429EF0651002087D6 /* ProductView.swift */,
+				A9A7F7C929EF1D29002087D6 /* ProductsView.swift */,
+				A9A7F7CD29EF258E002087D6 /* SpecsListItem.swift */,
+				A9A7F7AE29EF0C1B002087D6 /* UnitsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A93302A229F1CFFF0099AD32 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A9A7F7AC29EF0A70002087D6 /* Utils.swift */,
+				A933029B29F1CA850099AD32 /* YoutubeXMLParser.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A93302A329F1D0220099AD32 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				A933028029F1A8520099AD32 /* VideoView.swift */,
+				A933029F29F1CD1C0099AD32 /* VideoViewModel.swift */,
+				A93302A529F1D0730099AD32 /* VideoListItem.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		A93302A429F1D0310099AD32 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				A933027A29F197B50099AD32 /* PhotoGridItemView.swift */,
+				A933027C29F1A4FE0099AD32 /* PhotoDetailView.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		A9A7F77E29EF0581002087D6 = {
+			isa = PBXGroup;
+			children = (
+				A9A7F78929EF0581002087D6 /* RescueTube */,
+				A933028729F1BA930099AD32 /* OneSignalNotificationServiceExtension */,
+				A9A7F78829EF0581002087D6 /* Products */,
+				A933029529F1BB550099AD32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9A7F78829EF0581002087D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9A7F78729EF0581002087D6 /* RescueTube.app */,
+				A933028629F1BA930099AD32 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9A7F78929EF0581002087D6 /* RescueTube */ = {
+			isa = PBXGroup;
+			children = (
+				A933029929F1BB960099AD32 /* Info.plist */,
+				A933029829F1BB920099AD32 /* RescueTube.entitlements */,
+				A9A7F81B29EF3963002087D6 /* 195 */,
+				A9A7F81929EF395B002087D6 /* 175 */,
+				A9A7F81729EF3954002087D6 /* 145 */,
+				A9A7F7B029EF0C31002087D6 /* images */,
+				A9A7F78A29EF0581002087D6 /* RescueTubeApp.swift */,
+				A933027E29F1A7B80099AD32 /* ContentView.swift */,
+				A933029D29F1CAF60099AD32 /* Playlist.swift */,
+				A93302A229F1CFFF0099AD32 /* Helper */,
+				A93302A129F1CFD50099AD32 /* Views */,
+				A9A7F7A629EF0A46002087D6 /* location.json */,
+				A9A7F78E29EF0582002087D6 /* Assets.xcassets */,
+				A9A7F79029EF0582002087D6 /* Preview Content */,
+				A9B4BCB929F8448F0075FBC1 /* Launch Screen.storyboard */,
+			);
+			path = RescueTube;
+			sourceTree = "<group>";
+		};
+		A9A7F79029EF0582002087D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A9A7F79129EF0582002087D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9A7F7B029EF0C31002087D6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A9B4BCBB29F845690075FBC1 /* LIFE_Logo_Square.png */,
+				A9A7F7B129EF0C31002087D6 /* life_units.png */,
+				A9A7F7B229EF0C31002087D6 /* mactubemeasurementsmax.jpg */,
+				A9A7F7B329EF0C31002087D6 /* manuvers1t.jpg */,
+				A9A7F7B429EF0C31002087D6 /* mactubemeasurements.jpg */,
+				A9A7F7B629EF0C31002087D6 /* manuvers4t.jpg */,
+				A9A7F7B729EF0C31002087D6 /* manuvers5t.jpg */,
+				A9A7F7B829EF0C31002087D6 /* manuvers2t.jpg */,
+				A9A7F7B929EF0C31002087D6 /* mactubemeasurementsmall.jpg */,
+				A9A7F7BC29EF0C31002087D6 /* manuvers3t.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A933028529F1BA930099AD32 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A933028E29F1BA930099AD32 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				A933028229F1BA930099AD32 /* Sources */,
+				A933028329F1BA930099AD32 /* Frameworks */,
+				A933028429F1BA930099AD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				A933029629F1BB550099AD32 /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = A933028629F1BA930099AD32 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A9A7F78629EF0581002087D6 /* RescueTube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A7F79529EF0582002087D6 /* Build configuration list for PBXNativeTarget "RescueTube" */;
+			buildPhases = (
+				A9A7F78329EF0581002087D6 /* Sources */,
+				A9A7F78429EF0581002087D6 /* Frameworks */,
+				A9A7F78529EF0581002087D6 /* Resources */,
+				A933029129F1BA930099AD32 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A933028C29F1BA930099AD32 /* PBXTargetDependency */,
+			);
+			name = RescueTube;
+			packageProductDependencies = (
+				A933029329F1BB360099AD32 /* OneSignal */,
+			);
+			productName = RescueTube;
+			productReference = A9A7F78729EF0581002087D6 /* RescueTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9A7F77F29EF0581002087D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A933028529F1BA930099AD32 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					A9A7F78629EF0581002087D6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = A9A7F78229EF0581002087D6 /* Build configuration list for PBXProject "RescueTube" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9A7F77E29EF0581002087D6;
+			packageReferences = (
+				A933029229F1BB360099AD32 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
+			productRefGroup = A9A7F78829EF0581002087D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9A7F78629EF0581002087D6 /* RescueTube */,
+				A933028529F1BA930099AD32 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A933028429F1BA930099AD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A7F78529EF0581002087D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A7F79229EF0582002087D6 /* Preview Assets.xcassets in Resources */,
+				A9A7F7C429EF0C31002087D6 /* manuvers2t.jpg in Resources */,
+				A9A7F7A729EF0A47002087D6 /* location.json in Resources */,
+				A9A7F81C29EF3963002087D6 /* 195 in Resources */,
+				A9A7F78F29EF0582002087D6 /* Assets.xcassets in Resources */,
+				A9A7F7C329EF0C31002087D6 /* manuvers5t.jpg in Resources */,
+				A9B4BCBC29F845690075FBC1 /* LIFE_Logo_Square.png in Resources */,
+				A9A7F7C229EF0C31002087D6 /* manuvers4t.jpg in Resources */,
+				A9A7F81A29EF395B002087D6 /* 175 in Resources */,
+				A9A7F7C829EF0C31002087D6 /* manuvers3t.jpg in Resources */,
+				A9A7F7C529EF0C31002087D6 /* mactubemeasurementsmall.jpg in Resources */,
+				A9B4BCBA29F8448F0075FBC1 /* Launch Screen.storyboard in Resources */,
+				A9A7F7C029EF0C31002087D6 /* mactubemeasurements.jpg in Resources */,
+				A9A7F7BF29EF0C31002087D6 /* manuvers1t.jpg in Resources */,
+				A9A7F7BE29EF0C31002087D6 /* mactubemeasurementsmax.jpg in Resources */,
+				A9A7F7BD29EF0C31002087D6 /* life_units.png in Resources */,
+				A9A7F81829EF3954002087D6 /* 145 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A933028229F1BA930099AD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933028929F1BA930099AD32 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A7F78329EF0581002087D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A7F7A529EF0651002087D6 /* ProductView.swift in Sources */,
+				A9A7F78D29EF0581002087D6 /* HomeView.swift in Sources */,
+				A93302A029F1CD1C0099AD32 /* VideoViewModel.swift in Sources */,
+				A933027F29F1A7B80099AD32 /* ContentView.swift in Sources */,
+				A9A7F7AD29EF0A70002087D6 /* Utils.swift in Sources */,
+				A9A7F7CE29EF258E002087D6 /* SpecsListItem.swift in Sources */,
+				A9A7F7A929EF0A4D002087D6 /* LocationView.swift in Sources */,
+				A9A7F7CA29EF1D29002087D6 /* ProductsView.swift in Sources */,
+				A9A7F78B29EF0581002087D6 /* RescueTubeApp.swift in Sources */,
+				A933029C29F1CA850099AD32 /* YoutubeXMLParser.swift in Sources */,
+				A9A7F7AF29EF0C1B002087D6 /* UnitsView.swift in Sources */,
+				A933027D29F1A4FE0099AD32 /* PhotoDetailView.swift in Sources */,
+				A933027B29F197B50099AD32 /* PhotoGridItemView.swift in Sources */,
+				A9A7F79929EF0634002087D6 /* ManeuversView.swift in Sources */,
+				A933028129F1A8520099AD32 /* VideoView.swift in Sources */,
+				A93302A629F1D0730099AD32 /* VideoListItem.swift in Sources */,
+				A933029E29F1CAF60099AD32 /* Playlist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A933028C29F1BA930099AD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A933028529F1BA930099AD32 /* OneSignalNotificationServiceExtension */;
+			targetProxy = A933028B29F1BA930099AD32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A933028F29F1BA930099AD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0.1;
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifeguard.RescueTube.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A933029029F1BA930099AD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0.1;
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifeguard.RescueTube.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9A7F79329EF0582002087D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9A7F79429EF0582002087D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9A7F79629EF0582002087D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RescueTube/RescueTube.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0.1;
+				DEVELOPMENT_ASSET_PATHS = "\"RescueTube/Preview Content\"";
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RescueTube/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifeguard.RescueTube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9A7F79729EF0582002087D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RescueTube/RescueTube.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0.1;
+				DEVELOPMENT_ASSET_PATHS = "\"RescueTube/Preview Content\"";
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RescueTube/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifeguard.RescueTube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A933028E29F1BA930099AD32 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A933028F29F1BA930099AD32 /* Debug */,
+				A933029029F1BA930099AD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A7F78229EF0581002087D6 /* Build configuration list for PBXProject "RescueTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A7F79329EF0582002087D6 /* Debug */,
+				A9A7F79429EF0582002087D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A7F79529EF0582002087D6 /* Build configuration list for PBXNativeTarget "RescueTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A7F79629EF0582002087D6 /* Debug */,
+				A9A7F79729EF0582002087D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A933029229F1BB360099AD32 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A933029329F1BB360099AD32 /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A933029229F1BB360099AD32 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		A933029629F1BB550099AD32 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A933029229F1BB360099AD32 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9A7F77F29EF0581002087D6 /* Project object */;
+}
