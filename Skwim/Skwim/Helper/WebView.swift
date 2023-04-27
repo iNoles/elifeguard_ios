@@ -17,7 +17,8 @@ struct WebView: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        uiView.load(URLRequest(url: URL(string: "https://www.elifeguard.com")!))
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "why_skwim", ofType: "html")!)
+        uiView.loadFileURL(url, allowingReadAccessTo: url)
     }
     
     func goBack() {

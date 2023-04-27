@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A99644B029FAF9D900155809 /* SkwimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644AF29FAF9D900155809 /* SkwimApp.swift */; };
+		A99644B229FAF9D900155809 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644B129FAF9D900155809 /* ContentView.swift */; };
+		A99644B429FAF9DA00155809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99644B329FAF9DA00155809 /* Assets.xcassets */; };
+		A99644B729FAF9DA00155809 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99644B629FAF9DA00155809 /* Preview Assets.xcassets */; };
+		A99644C129FAFC3E00155809 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644C029FAFC3E00155809 /* HomeView.swift */; };
+		A99644D229FAFDC200155809 /* skwim03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A99644C929FAFDC200155809 /* skwim03.jpg */; };
+		A99644D429FAFDC200155809 /* skwim02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A99644CB29FAFDC200155809 /* skwim02.jpg */; };
+		A99644D529FAFDC200155809 /* skwim01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A99644CC29FAFDC200155809 /* skwim01.jpg */; };
+		A99644D629FAFDC200155809 /* skwim05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A99644CD29FAFDC200155809 /* skwim05.jpg */; };
+		A99644D729FAFDC200155809 /* skwim04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A99644CE29FAFDC200155809 /* skwim04.jpg */; };
+		A99644D829FAFDC200155809 /* skwim06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A99644CF29FAFDC200155809 /* skwim06.jpg */; };
+		A99644D929FAFDC200155809 /* skwim07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A99644D029FAFDC200155809 /* skwim07.jpg */; };
+		A99644DA29FAFDC200155809 /* skwim08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A99644D129FAFDC200155809 /* skwim08.jpg */; };
+		A99644DE29FB00B900155809 /* YoutubeXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644DC29FB00B900155809 /* YoutubeXMLParser.swift */; };
+		A99644DF29FB00B900155809 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644DD29FB00B900155809 /* Utils.swift */; };
+		A99644E429FB011B00155809 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644E129FB011B00155809 /* VideoViewModel.swift */; };
+		A99644E529FB011B00155809 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644E229FB011B00155809 /* VideoView.swift */; };
+		A99644E629FB011B00155809 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644E329FB011B00155809 /* VideoListItem.swift */; };
+		A99644E829FB016000155809 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644E729FB016000155809 /* Playlist.swift */; };
+		A99644ED29FB02B200155809 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644EA29FB02B200155809 /* PhotoView.swift */; };
+		A99644EE29FB02B200155809 /* PhotoGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644EB29FB02B200155809 /* PhotoGridItemView.swift */; };
+		A99644EF29FB02B200155809 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644EC29FB02B200155809 /* PhotoDetailView.swift */; };
+		A99644F129FB06A600155809 /* WhatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644F029FB06A600155809 /* WhatView.swift */; };
+		A99644F329FB06B100155809 /* WhyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644F229FB06B100155809 /* WhyView.swift */; };
+		A99644F529FB06BE00155809 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644F429FB06BE00155809 /* RulesView.swift */; };
+		A99644F729FB06CE00155809 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644F629FB06CE00155809 /* LocationView.swift */; };
+		A99644F929FB0B6B00155809 /* why_skwim.html in Resources */ = {isa = PBXBuildFile; fileRef = A99644F829FB0B6B00155809 /* why_skwim.html */; };
+		A99644FB29FB0B8000155809 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = A99644FA29FB0B8000155809 /* location.json */; };
+		A99644FD29FB0BCE00155809 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99644FC29FB0BCE00155809 /* WebView.swift */; };
+		A996450529FB135700155809 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996450429FB135700155809 /* NotificationService.swift */; };
+		A996450929FB135700155809 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A996450229FB135700155809 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A996451029FB13C400155809 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = A996450F29FB13C400155809 /* OneSignal */; };
+		A996451329FB13CC00155809 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = A996451229FB13CC00155809 /* OneSignalExtension */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A996450729FB135700155809 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99644A429FAF9D900155809 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A996450129FB135700155809;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A996450D29FB135700155809 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A996450929FB135700155809 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A99644AC29FAF9D900155809 /* Skwim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skwim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99644AF29FAF9D900155809 /* SkwimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkwimApp.swift; sourceTree = "<group>"; };
+		A99644B129FAF9D900155809 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A99644B329FAF9DA00155809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A99644B629FAF9DA00155809 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A99644BD29FAFBDE00155809 /* Skwim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Skwim.entitlements; sourceTree = "<group>"; };
+		A99644BE29FAFBE600155809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A99644C029FAFC3E00155809 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A99644C929FAFDC200155809 /* skwim03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skwim03.jpg; sourceTree = "<group>"; };
+		A99644CB29FAFDC200155809 /* skwim02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skwim02.jpg; sourceTree = "<group>"; };
+		A99644CC29FAFDC200155809 /* skwim01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skwim01.jpg; sourceTree = "<group>"; };
+		A99644CD29FAFDC200155809 /* skwim05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skwim05.jpg; sourceTree = "<group>"; };
+		A99644CE29FAFDC200155809 /* skwim04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skwim04.jpg; sourceTree = "<group>"; };
+		A99644CF29FAFDC200155809 /* skwim06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skwim06.jpg; sourceTree = "<group>"; };
+		A99644D029FAFDC200155809 /* skwim07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skwim07.jpg; sourceTree = "<group>"; };
+		A99644D129FAFDC200155809 /* skwim08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skwim08.jpg; sourceTree = "<group>"; };
+		A99644DC29FB00B900155809 /* YoutubeXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeXMLParser.swift; sourceTree = "<group>"; };
+		A99644DD29FB00B900155809 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A99644E129FB011B00155809 /* VideoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		A99644E229FB011B00155809 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		A99644E329FB011B00155809 /* VideoListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
+		A99644E729FB016000155809 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		A99644EA29FB02B200155809 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo\U0010View.swift"; sourceTree = "<group>"; };
+		A99644EB29FB02B200155809 /* PhotoGridItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridItemView.swift; sourceTree = "<group>"; };
+		A99644EC29FB02B200155809 /* PhotoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		A99644F029FB06A600155809 /* WhatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatView.swift; sourceTree = "<group>"; };
+		A99644F229FB06B100155809 /* WhyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyView.swift; sourceTree = "<group>"; };
+		A99644F429FB06BE00155809 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		A99644F629FB06CE00155809 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		A99644F829FB0B6B00155809 /* why_skwim.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = why_skwim.html; sourceTree = "<group>"; };
+		A99644FA29FB0B8000155809 /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
+		A99644FC29FB0BCE00155809 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A996450229FB135700155809 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A996450429FB135700155809 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A996450629FB135700155809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A996451429FB146000155809 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A99644A929FAF9D900155809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A996451029FB13C400155809 /* OneSignal in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99644FF29FB135700155809 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A996451329FB13CC00155809 /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A99644A329FAF9D900155809 = {
+			isa = PBXGroup;
+			children = (
+				A99644AE29FAF9D900155809 /* Skwim */,
+				A996450329FB135700155809 /* OneSignalNotificationServiceExtension */,
+				A99644AD29FAF9D900155809 /* Products */,
+				A996451129FB13CC00155809 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A99644AD29FAF9D900155809 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A99644AC29FAF9D900155809 /* Skwim.app */,
+				A996450229FB135700155809 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A99644AE29FAF9D900155809 /* Skwim */ = {
+			isa = PBXGroup;
+			children = (
+				A99644DB29FB00B900155809 /* Helper */,
+				A99644C829FAFDC200155809 /* Images */,
+				A99644BF29FAFC2800155809 /* View */,
+				A99644BE29FAFBE600155809 /* Info.plist */,
+				A99644E729FB016000155809 /* Playlist.swift */,
+				A99644BD29FAFBDE00155809 /* Skwim.entitlements */,
+				A99644AF29FAF9D900155809 /* SkwimApp.swift */,
+				A99644B129FAF9D900155809 /* ContentView.swift */,
+				A99644F829FB0B6B00155809 /* why_skwim.html */,
+				A99644FA29FB0B8000155809 /* location.json */,
+				A99644B329FAF9DA00155809 /* Assets.xcassets */,
+				A99644B529FAF9DA00155809 /* Preview Content */,
+			);
+			path = Skwim;
+			sourceTree = "<group>";
+		};
+		A99644B529FAF9DA00155809 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A99644B629FAF9DA00155809 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A99644BF29FAFC2800155809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A99644C029FAFC3E00155809 /* HomeView.swift */,
+				A99644F029FB06A600155809 /* WhatView.swift */,
+				A99644F229FB06B100155809 /* WhyView.swift */,
+				A99644F429FB06BE00155809 /* RulesView.swift */,
+				A99644F629FB06CE00155809 /* LocationView.swift */,
+				A99644E929FB02B200155809 /* Photo */,
+				A99644E029FB011B00155809 /* Video */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A99644C829FAFDC200155809 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A99644C929FAFDC200155809 /* skwim03.jpg */,
+				A99644CB29FAFDC200155809 /* skwim02.jpg */,
+				A99644CC29FAFDC200155809 /* skwim01.jpg */,
+				A99644CD29FAFDC200155809 /* skwim05.jpg */,
+				A99644CE29FAFDC200155809 /* skwim04.jpg */,
+				A99644CF29FAFDC200155809 /* skwim06.jpg */,
+				A99644D029FAFDC200155809 /* skwim07.jpg */,
+				A99644D129FAFDC200155809 /* skwim08.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A99644DB29FB00B900155809 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A99644FC29FB0BCE00155809 /* WebView.swift */,
+				A99644DC29FB00B900155809 /* YoutubeXMLParser.swift */,
+				A99644DD29FB00B900155809 /* Utils.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A99644E029FB011B00155809 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				A99644E129FB011B00155809 /* VideoViewModel.swift */,
+				A99644E229FB011B00155809 /* VideoView.swift */,
+				A99644E329FB011B00155809 /* VideoListItem.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		A99644E929FB02B200155809 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				A99644EA29FB02B200155809 /* PhotoView.swift */,
+				A99644EB29FB02B200155809 /* PhotoGridItemView.swift */,
+				A99644EC29FB02B200155809 /* PhotoDetailView.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		A996450329FB135700155809 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A996451429FB146000155809 /* OneSignalNotificationServiceExtension.entitlements */,
+				A996450429FB135700155809 /* NotificationService.swift */,
+				A996450629FB135700155809 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		A996451129FB13CC00155809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A99644AB29FAF9D900155809 /* Skwim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99644BA29FAF9DA00155809 /* Build configuration list for PBXNativeTarget "Skwim" */;
+			buildPhases = (
+				A99644A829FAF9D900155809 /* Sources */,
+				A99644A929FAF9D900155809 /* Frameworks */,
+				A99644AA29FAF9D900155809 /* Resources */,
+				A996450D29FB135700155809 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A996450829FB135700155809 /* PBXTargetDependency */,
+			);
+			name = Skwim;
+			packageProductDependencies = (
+				A996450F29FB13C400155809 /* OneSignal */,
+			);
+			productName = Skwim;
+			productReference = A99644AC29FAF9D900155809 /* Skwim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A996450129FB135700155809 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A996450A29FB135700155809 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				A99644FE29FB135700155809 /* Sources */,
+				A99644FF29FB135700155809 /* Frameworks */,
+				A996450029FB135700155809 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				A996451229FB13CC00155809 /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = A996450229FB135700155809 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A99644A429FAF9D900155809 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A99644AB29FAF9D900155809 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					A996450129FB135700155809 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = A99644A729FAF9D900155809 /* Build configuration list for PBXProject "Skwim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A99644A329FAF9D900155809;
+			packageReferences = (
+				A996450E29FB13C400155809 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
+			productRefGroup = A99644AD29FAF9D900155809 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A99644AB29FAF9D900155809 /* Skwim */,
+				A996450129FB135700155809 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A99644AA29FAF9D900155809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99644B729FAF9DA00155809 /* Preview Assets.xcassets in Resources */,
+				A99644D729FAFDC200155809 /* skwim04.jpg in Resources */,
+				A99644F929FB0B6B00155809 /* why_skwim.html in Resources */,
+				A99644D629FAFDC200155809 /* skwim05.jpg in Resources */,
+				A99644D229FAFDC200155809 /* skwim03.jpg in Resources */,
+				A99644DA29FAFDC200155809 /* skwim08.jpg in Resources */,
+				A99644D429FAFDC200155809 /* skwim02.jpg in Resources */,
+				A99644D529FAFDC200155809 /* skwim01.jpg in Resources */,
+				A99644D829FAFDC200155809 /* skwim06.jpg in Resources */,
+				A99644D929FAFDC200155809 /* skwim07.jpg in Resources */,
+				A99644FB29FB0B8000155809 /* location.json in Resources */,
+				A99644B429FAF9DA00155809 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A996450029FB135700155809 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A99644A829FAF9D900155809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99644DE29FB00B900155809 /* YoutubeXMLParser.swift in Sources */,
+				A99644F729FB06CE00155809 /* LocationView.swift in Sources */,
+				A99644C129FAFC3E00155809 /* HomeView.swift in Sources */,
+				A99644DF29FB00B900155809 /* Utils.swift in Sources */,
+				A99644F329FB06B100155809 /* WhyView.swift in Sources */,
+				A99644EE29FB02B200155809 /* PhotoGridItemView.swift in Sources */,
+				A99644E629FB011B00155809 /* VideoListItem.swift in Sources */,
+				A99644ED29FB02B200155809 /* PhotoView.swift in Sources */,
+				A99644F129FB06A600155809 /* WhatView.swift in Sources */,
+				A99644B229FAF9D900155809 /* ContentView.swift in Sources */,
+				A99644E529FB011B00155809 /* VideoView.swift in Sources */,
+				A99644FD29FB0BCE00155809 /* WebView.swift in Sources */,
+				A99644EF29FB02B200155809 /* PhotoDetailView.swift in Sources */,
+				A99644F529FB06BE00155809 /* RulesView.swift in Sources */,
+				A99644E429FB011B00155809 /* VideoViewModel.swift in Sources */,
+				A99644B029FAF9D900155809 /* SkwimApp.swift in Sources */,
+				A99644E829FB016000155809 /* Playlist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99644FE29FB135700155809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A996450529FB135700155809 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A996450829FB135700155809 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A996450129FB135700155809 /* OneSignalNotificationServiceExtension */;
+			targetProxy = A996450729FB135700155809 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A99644B829FAF9DA00155809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A99644B929FAF9DA00155809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A99644BB29FAF9DA00155809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Skwim/Skwim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"Skwim/Preview Content\"";
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Skwim/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your current location to display it on the map.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifeguard.skwim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A99644BC29FAF9DA00155809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Skwim/Skwim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"Skwim/Preview Content\"";
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Skwim/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your current location to display it on the map.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifeguard.skwim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A996450B29FB135700155809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifeguard.skwim.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A996450C29FB135700155809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elifeguard.skwim.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A99644A729FAF9D900155809 /* Build configuration list for PBXProject "Skwim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99644B829FAF9DA00155809 /* Debug */,
+				A99644B929FAF9DA00155809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99644BA29FAF9DA00155809 /* Build configuration list for PBXNativeTarget "Skwim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99644BB29FAF9DA00155809 /* Debug */,
+				A99644BC29FAF9DA00155809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A996450A29FB135700155809 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A996450B29FB135700155809 /* Debug */,
+				A996450C29FB135700155809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A996450E29FB13C400155809 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A996450F29FB13C400155809 /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A996450E29FB13C400155809 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		A996451229FB13CC00155809 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A996450E29FB13C400155809 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A99644A429FAF9D900155809 /* Project object */;
+}

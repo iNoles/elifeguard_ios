@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A902CFB029FAEA540085A099 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A902CFAF29FAEA540085A099 /* Launch Screen.storyboard */; };
+		A902CFB229FAEAC20085A099 /* lifeguardtv_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A902CFB129FAEAC20085A099 /* lifeguardtv_logo.png */; };
 		A9F7F66229F86DAA00BAA0EF /* LifeguardTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7F66129F86DAA00BAA0EF /* LifeguardTVApp.swift */; };
 		A9F7F66429F86DAA00BAA0EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F7F66329F86DAA00BAA0EF /* ContentView.swift */; };
 		A9F7F66629F86DAC00BAA0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F7F66529F86DAC00BAA0EF /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A902CFAF29FAEA540085A099 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A902CFB129FAEAC20085A099 /* lifeguardtv_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lifeguardtv_logo.png; sourceTree = "<group>"; };
 		A9F7F65E29F86DAA00BAA0EF /* LifeguardTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeguardTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F7F66129F86DAA00BAA0EF /* LifeguardTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeguardTVApp.swift; sourceTree = "<group>"; };
 		A9F7F66329F86DAA00BAA0EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				A9F7F66329F86DAA00BAA0EF /* ContentView.swift */,
 				A9F7F66F29F86E1D00BAA0EF /* WebView.swift */,
 				A9F7F66529F86DAC00BAA0EF /* Assets.xcassets */,
+				A902CFB129FAEAC20085A099 /* lifeguardtv_logo.png */,
+				A902CFAF29FAEA540085A099 /* Launch Screen.storyboard */,
 				A9F7F66729F86DAC00BAA0EF /* Preview Content */,
 			);
 			path = LifeguardTV;
@@ -225,6 +231,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A902CFB229FAEAC20085A099 /* lifeguardtv_logo.png in Resources */,
+				A902CFB029FAEA540085A099 /* Launch Screen.storyboard in Resources */,
 				A9F7F66929F86DAC00BAA0EF /* Preview Assets.xcassets in Resources */,
 				A9F7F66629F86DAC00BAA0EF /* Assets.xcassets in Resources */,
 			);
@@ -391,16 +399,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LifeguardTV/LifeguardTV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"LifeguardTV/Preview Content\"";
 				DEVELOPMENT_TEAM = 78M8KAD49G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LifeguardTV/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your current location to display it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -408,7 +417,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LifeguardTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -425,16 +434,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LifeguardTV/LifeguardTV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"LifeguardTV/Preview Content\"";
 				DEVELOPMENT_TEAM = 78M8KAD49G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LifeguardTV/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your current location to display it on the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -442,7 +452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LifeguardTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -456,7 +466,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 78M8KAD49G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -467,7 +477,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LifeguardTV.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -482,7 +492,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 78M8KAD49G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -493,7 +503,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LifeguardTV.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

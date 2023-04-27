@@ -1,0 +1,382 @@
+[
+    {
+        "location": {"latitude": 33.7141259, "longitude": -78.8661518},
+        "title": "Pepper Geddings Recreation Center",
+        "subtitle": "3205 Oak Street\nMyrtle Beach, SC 29577\n(843) 918-2280"
+    },
+    {
+        "location": {"latitude": 35.6229385,"longitude": -120.6729607},
+        "title": "Centennial Pool",
+        "subtitle": "600 Nickerson Drive\nPaso Robles, CA 93446\n(805) 237-3988"
+    },
+    {
+        "location": {"latitude": 28.3127811,"longitude": -80.636002},
+        "title": "Cocoa Beach Aquatic Center",
+        "subtitle": "4800 Tom Warriner Blvd\nCocoa Beach, FL 32931\n(321) 868-3240"
+    },
+    {
+        "location": {"latitude": 40.4669074,"longitude": -79.925312},
+        "title": "Pittsburgh Obama Academy of International Studies",
+        "subtitle": "515 N Highland Ave\nPittsburgh, PA 15206\n(412) 622-5980"
+    },
+    {
+        "location": {"latitude": 33.419991,"longitude": -111.824519},
+        "title": "Mesa Family YMCA",
+        "subtitle": "207 N Mesa Drive\nMesa, AZ 85201\n(480) 969-8166"
+    },
+    {
+        "location": {"latitude": 38.9026841,"longitude": -77.1422616},
+        "title": "Yorktown Aquatics Center",
+        "subtitle": "5200 Yorktown Blvd\nArlington, VA 22207\n(703) 228-8754"
+    },
+    {
+        "location": {"latitude": 32.9087746,"longitude": -80.0595087},
+        "title": "Outdoor Recreation",
+        "subtitle": "101 Scarton Pl\nJoint Base Charleston, SC 29404\n(843) 963-1672"
+    },
+    {
+        "location": {"latitude": 28.8563797,"longitude": 48.1016056},
+        "title": "Camp Arifjan Army Base",
+        "subtitle": "Arifjan, Kuwait"
+    },
+    {
+        "location": {"latitude": 47.6924788,"longitude": -122.1082062},
+        "title": "Redmond Pool",
+        "subtitle": "17535 NE 104th St\nRedmond, WA 98052\n(425) 883-4422"
+    },
+    {
+        "location": {"latitude": 33.6338114,"longitude": -117.8865309},
+        "title": "Corona Del Mar High/Middle School",
+        "subtitle": "2101 Eastbluff Dr\nNewport Beach, CA 92660\n(949) 515-6000"
+    },
+    {
+        "location": {"latitude": 47.6006443,"longitude": -122.0365518},
+        "title": "Sammamish Family YMCA",
+        "subtitle": "831 228th Avenue SE\nSammamish, WA, 98075\n(425) 391-4840"
+    },
+    {
+        "location": {"latitude": 47.6268915,"longitude": -122.1099254},
+        "title": "Kevin McCarthy",
+        "subtitle": "kevin@skwiminternational.org\n(425) 802-2167"
+    },
+    {
+        "location": {"latitude": 47.7051176,"longitude": -116.812251},
+        "title": "The Salvation Army Kroc Center",
+        "subtitle": "1765 W Golf Course Rd\nCoeur d'Alene, ID 83815\n(208) 667-1865"
+    },
+    {
+        "location": {"latitude": 28.4566485,"longitude": -80.7419398},
+        "title": "Merritt Island, Florida 32953"
+    },
+    {
+        "location": {"latitude": 36.8526141,"longitude": -119.7293868},
+        "title": "America's Kids Swim School",
+        "subtitle": "1205 N Willow Ave\nClovis, CA 93619\n(559) 324-7946"
+    },
+    {
+        "location": {"latitude": 33.6998857,"longitude": -84.3931853},
+        "title": "Whitehead Boys and Girls Club",
+        "subtitle": "1900 Lakewood Ave\nAtlanta, GA 30315\n(404) 627-4617"
+    },
+    {
+        "location": {"latitude": 33.4527134,"longitude": -112.0759009},
+        "title": "Valley of the Sun YMCA",
+        "subtitle": "350 N 1st Ave\nPhoenix, AZ 85003\n(602) 257-5120"
+    },
+    {
+        "location": {"latitude": 22.3864699,"longitude": 114.2084243},
+        "title": "International Christian School (Shek Mun Campus)",
+        "subtitle": "1 On Muk Ln\nSha Tin, Hong Kong\n+852 3920 0000"
+    },
+    {
+        "location": {"latitude": 47.5279525,"longitude": -122.0378965},
+        "title": "Julius Boehm Pool",
+        "subtitle": "50 SE Clark St\nIssaquah, WA 98027\n(425) 837-3350"
+    },
+    {
+        "location": {"latitude": 47.6804308,"longitude": -122.3309097},
+        "title": "Evans Pool",
+        "subtitle": "7201 East Green Lake Dr N\nSeattle, WA 98115\n(206) 684-4961"
+    },
+    {
+        "location": {"latitude": 48.054771,"longitude": -122.1523822},
+        "title": "Marysville Family YMCA",
+        "subtitle": "6420 60th Dr NE\nMarysville, WA 98270\n(360) 653-9622"
+    },
+    {
+        "location": {"latitude": 47.7636706,"longitude": -122.2106158},
+        "title": "McMenamins North Shore Lagoon",
+        "subtitle": "9815 NE 188th St\nBothell, WA 98011\n(425) 398-0122"
+    },
+    {
+        "location": {"latitude": 42.5016222,"longitude": -70.8991164},
+        "title": "Marblehead, MA 01945"
+    },
+    {
+        "location": {"latitude": 40.8788203,"longitude": -74.8273523},
+        "title": "Budd Lake, NJ 07828"
+    },
+    {
+        "location": {"latitude": 40.6334631,"longitude": -73.6755989},
+        "title": "Oceanside, NY 11572"
+    },
+    {
+        "location": {"latitude": 42.9391656,"longitude": -75.9398912},
+        "title": "Cazenovia, NY 13035"
+    },
+    {
+        "location": {"latitude": 40.4251932,"longitude": -80.0176684},
+        "title": "Pittsburgh, PA 15203"
+    },
+    {
+        "location": {"latitude": 40.4693997,"longitude": -79.9457174},
+        "title": "Pittsburgh, PA 15206"
+    },
+    {
+        "location": {"latitude": 40.4666042,"longitude": -79.9641731},
+        "title": "Pittsburgh, PA 15224"
+    },
+    {
+        "location": {"latitude": 40.3545074,"longitude": -75.1777045},
+        "title": "Doylestown, PA 18902"
+    },
+    {
+        "location": {"latitude": 39.9399012,"longitude": -75.2030206},
+        "title": "Philadelphia, PA 19146"
+    },
+    {
+        "location": {"latitude": 38.9198182,"longitude": -77.056235},
+        "title": "Washington, DC 20009"
+    },
+    {
+        "location": {"latitude": 38.8434672,"longitude": -77.1241054},
+        "title": "Arlington, VA 22206"
+    },
+    {
+        "location": {"latitude": 37.0229675,"longitude": -76.3394011},
+        "title": "Hampton, VA 23668"
+    },
+    {
+        "location": {"latitude": 32.9933477,"longitude": -80.1358568},
+        "title": "Goose Creek, SC 29445"
+    },
+    {
+        "location": {"latitude": 32.704303,"longitude": -80.228725},
+        "title": "Johns Island, SC 29455"
+    },
+    {
+        "location": {"latitude": 33.6962243,"longitude": -78.9669036},
+        "title": "Myrtle Beach, SC 29577"
+    },
+    {
+        "location": {"latitude": 30.4407853,"longitude": -84.2905406},
+        "title": "Tallahassee, FL 32306"
+    },
+    {
+        "location": {"latitude": 28.3258305,"longitude": -80.657887},
+        "title": "Cocoa Beach, FL 32931"
+    },
+    {
+        "location": {"latitude": 28.1758147,"longitude": -80.8970934},
+        "title": "Melbourne, FL 32940"
+    },
+    {
+        "location": {"latitude": 28.2843954,"longitude": -80.9345059},
+        "title": "Rockledge, FL 32955"
+    },
+    {
+        "location": {"latitude": 28.2611219,"longitude": -81.6548508},
+        "title": "Davenport, FL 33896"
+    },
+    {
+        "location": {"latitude": 27.1088951,"longitude": -82.4093613},
+        "title": "Venice, FL 34292"
+    },
+    {
+        "location": {"latitude": 28.5501041,"longitude": -82.0171493},
+        "title": "Groveland, FL 34736"
+    },
+    {
+        "location": {"latitude": 40.0045042,"longitude": -83.041479},
+        "title": "Columbus, OH 43210"
+    },
+    {
+        "location": {"latitude": 41.4794647,"longitude": -87.3825139},
+        "title": "Merrillville, IN 46410"
+    },
+    {
+        "location": {"latitude": 38.4874105,"longitude": -86.8075672},
+        "title": "French Lick, IN 47432"
+    },
+    {
+        "location": {"latitude": 42.8698621,"longitude": -84.5128373},
+        "title": "Laingsburg, MI 48848"
+    },
+    {
+        "location": {"latitude": 43.0748921,"longitude": -89.4939724},
+        "title": "Madison, WI 53705"
+    },
+    {
+        "location": {"latitude": 42.9879635,"longitude": -89.4960464},
+        "title": "Fitchburg, WI 53711"
+    },
+    {
+        "location": {"latitude": 43.0619091,"longitude": -89.4363963},
+        "title": "Madison, WI 53715"
+    },
+    {
+        "location": {"latitude": 45.122681,"longitude": -93.5651687},
+        "title": "Maple Grove, MN 55311"
+    },
+    {
+        "location": {"latitude": 41.8808507,"longitude": -88.011569},
+        "title": "Villa Park, IL 60181"
+    },
+    {
+        "location": {"latitude": 36.11025,"longitude": -89.8257891},
+        "title": "Caruthersville, MO 63830"
+    },
+    {
+        "location": {"latitude": 33.0322089,"longitude": -96.9705766},
+        "title": "Carrollton, TX 75010"
+    },
+    {
+        "location": {"latitude": 41.0748782,"longitude": -112.066609},
+        "title": "Layton, UT 84041"
+    },
+    {
+        "location": {"latitude": 40.2524308,"longitude": -111.6524509},
+        "title": "Provo, UT 84602"
+    },
+    {
+        "location": {"latitude": 33.4390906,"longitude": -111.8886374},
+        "title": "Mesa, AZ 85201"
+    },
+    {
+        "location": {"latitude": 33.5604756,"longitude": -111.921486},
+        "title": "Scottsdale, AZ 85258"
+    },
+    {
+        "location": {"latitude": 32.8188586,"longitude": -117.23349},
+        "title": "San Diego, CA 92117"
+    },
+    {
+        "location": {"latitude": 32.8217981,"longitude": -117.1686155},
+        "title": "San Diego, CA 92123"
+    },
+    {
+        "location": {"latitude": 33.594008,"longitude": -117.7464254},
+        "title": "Laguna Hills, CA 92653"
+    },
+    {
+        "location": {"latitude": 35.6448663,"longitude": -121.3663685},
+        "title": "Paso Robles, CA 93446"
+    },
+    {
+        "location": {"latitude": 37.9733492,"longitude": -122.694447},
+        "title": "Fairfax, CA 94930"
+    },
+    {
+        "location": {"latitude": 37.4611843,"longitude": -122.245279},
+        "title": "Menlo Park, CA 94025"
+    },
+    {
+        "location": {"latitude": 37.9992333,"longitude": -122.6187529},
+        "title": "San Anselmo, CA 94960"
+    },
+    {
+        "location": {"latitude": 37.175685,"longitude": -121.9078455},
+        "title": "San Jose, CA 95120"
+    },
+    {
+        "location": {"latitude": 38.6868078,"longitude": -121.26022},
+        "title": "Orangevale, CA 95662"
+    },
+    {
+        "location": {"latitude": 40.539813,"longitude": -121.3755979},
+        "title": "Susanville, CA 96130"
+    },
+    {
+        "location": {"latitude": 21.3389864,"longitude": -158.0816875},
+        "title": "Ewa Beach, HI 96706"
+    },
+    {
+        "location": {"latitude": 20.7031834,"longitude": -156.5774725},
+        "title": "Kihei, HI 96753"
+    },
+    {
+        "location": {"latitude": 44.9421559, "longitude": -120.977665},
+        "title": "Antelope, OR 97001"
+    },
+    {
+        "location": {"latitude": 45.4962136, "longitude": -122.8361379},
+        "title": "Beaverton, OR 97005"
+    },
+    {
+        "location": {"latitude": 45.6005733, "longitude": -121.7510279},
+        "title": "Hood River, OR 97031"
+    },
+    {
+        "location": {"latitude": 47.7547028, "longitude": -122.2349542},
+        "title": "Bothell, WA 98011"
+    },
+    {
+        "location": {"latitude": 47.8444307, "longitude": -122.2691692},
+        "title": "Bothell, WA 98012"
+    },
+    {
+        "location": {"latitude": 47.7037724, "longitude": -122.0864498},
+        "title": "Duvall, WA 98019"
+    },
+    {
+        "location": {"latitude": 47.8388217, "longitude": -122.3982986},
+        "title": "Edmonds, WA 98026"
+    },
+    {
+        "location": {"latitude": 47.6731286, "longitude": -122.2278644},
+        "title": "Kirkland, WA 98033"
+    },
+    {
+        "location": {"latitude": 47.6803792, "longitude": -122.1904276},
+        "title": "Redmond, WA 98052"
+    },
+    {
+        "location": {"latitude": 47.4811686, "longitude": -122.2482108},
+        "title": "Renton, WA 98057"
+    },
+    {
+        "location": {"latitude": 47.5720722, "longitude": -121.9418402},
+        "title": "Snoqualmie, WA 98065"
+    },
+    {
+        "location": {"latitude": 47.6282771, "longitude": -122.1152832},
+        "title": "Sammamish, WA 98074"
+    },
+    {
+        "location": {"latitude": 47.6634202, "longitude": -122.4193803},
+        "title": "Seattle, WA 98107"
+    },
+    {
+        "location": {"latitude": 47.6081392, "longitude": -122.3313049},
+        "title": "Seattle, WA 98122"
+    },
+    {
+        "location": {"latitude": 47.7170612, "longitude": -122.3277998},
+        "title": "Seattle, WA 98125"
+    },
+    {
+        "location": {"latitude": 40.4705283, "longitude": -80.0159565},
+        "title": "The Pittsburgh Project",
+        "subtitle": "2801 N Charles St\nPittsburgh, PA 15214\n(844) 208-3680"
+    },
+    {
+        "location": {"latitude": 40.546218, "longitude": -80.1901207},
+        "title": "Edgeworth Club",
+        "subtitle": "511 East Dr\nSewickley, PA 15143\n(412) 741-8500"
+    },
+    {
+        "location": {"latitude": 40.4486657, "longitude": -79.9801535},
+        "title": "Ammon Rec Center",
+        "subtitle": "2217 Bedford Ave\nPittsburgh, PA 15219\n(412) 255-2501"
+    }
+]
