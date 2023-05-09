@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A973973A2A042BFD00ED8956 /* Lifeguard_TimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397392A042BFD00ED8956 /* Lifeguard_TimesApp.swift */; };
+		A973973C2A042BFD00ED8956 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973973B2A042BFD00ED8956 /* ContentView.swift */; };
+		A973973E2A042BFE00ED8956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A973973D2A042BFE00ED8956 /* Assets.xcassets */; };
+		A97397412A042BFE00ED8956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97397402A042BFE00ED8956 /* Preview Assets.xcassets */; };
+		A973974B2A042C4B00ED8956 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = A973974A2A042C4B00ED8956 /* OneSignal */; };
+		A973974F2A042D2200ED8956 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973974E2A042D2200ED8956 /* WebView.swift */; };
+		A97397542A042D2E00ED8956 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397512A042D2E00ED8956 /* VideoViewModel.swift */; };
+		A97397552A042D2E00ED8956 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397522A042D2E00ED8956 /* VideoView.swift */; };
+		A97397562A042D2E00ED8956 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397532A042D2E00ED8956 /* VideoListItem.swift */; };
+		A97397582A042D5000ED8956 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397572A042D5000ED8956 /* Playlist.swift */; };
+		A973975A2A042D7800ED8956 /* YoutubeXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397592A042D7800ED8956 /* YoutubeXMLParser.swift */; };
+		A973975C2A042E2A00ED8956 /* WordPressXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973975B2A042E2A00ED8956 /* WordPressXMLParser.swift */; };
+		A973975E2A042EE600ED8956 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973975D2A042EE600ED8956 /* Feed.swift */; };
+		A97397632A042FD200ED8956 /* HeadlinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397622A042FD200ED8956 /* HeadlinesViewModel.swift */; };
+		A97397652A04303400ED8956 /* HeadlinesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397642A04303400ED8956 /* HeadlinesListItem.swift */; };
+		A97397672A0430AD00ED8956 /* HeadlinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397662A0430AD00ED8956 /* HeadlinesView.swift */; };
+		A97397692A0430D000ED8956 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397682A0430D000ED8956 /* StoryView.swift */; };
+		A973976B2A04315600ED8956 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973976A2A04315600ED8956 /* PhotoView.swift */; };
+		A973976D2A043C3400ED8956 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973976C2A043C3400ED8956 /* MailView.swift */; };
+		A973976F2A04422000ED8956 /* HeadlinesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973976E2A04422000ED8956 /* HeadlinesDetailView.swift */; };
+		A97397712A04451D00ED8956 /* StringExtensionHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397702A04451D00ED8956 /* StringExtensionHTML.swift */; };
+		A97397752A04455400ED8956 /* HTMLEntityMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397742A04455400ED8956 /* HTMLEntityMapping.swift */; };
+		A9DA09352A0AA17C00AF0C6C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA09342A0AA17C00AF0C6C /* NotificationService.swift */; };
+		A9DA09392A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A9DA09322A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9DA09402A0AA1B300AF0C6C /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = A9DA093F2A0AA1B300AF0C6C /* OneSignalExtension */; };
+		A9DA09442A0AA7A200AF0C6C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DA09432A0AA7A200AF0C6C /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9DA09372A0AA17C00AF0C6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A973972E2A042BFD00ED8956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DA09312A0AA17C00AF0C6C;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9DA093A2A0AA17C00AF0C6C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9DA09392A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A97397362A042BFD00ED8956 /* Lifeguard Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lifeguard Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97397392A042BFD00ED8956 /* Lifeguard_TimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifeguard_TimesApp.swift; sourceTree = "<group>"; };
+		A973973B2A042BFD00ED8956 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A973973D2A042BFE00ED8956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A97397402A042BFE00ED8956 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A97397472A042C2300ED8956 /* Lifeguard Times.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lifeguard Times.entitlements"; sourceTree = "<group>"; };
+		A97397482A042C2900ED8956 /* Lifeguard-Times-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Lifeguard-Times-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A973974E2A042D2200ED8956 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A97397512A042D2E00ED8956 /* VideoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		A97397522A042D2E00ED8956 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		A97397532A042D2E00ED8956 /* VideoListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
+		A97397572A042D5000ED8956 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		A97397592A042D7800ED8956 /* YoutubeXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeXMLParser.swift; sourceTree = "<group>"; };
+		A973975B2A042E2A00ED8956 /* WordPressXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPressXMLParser.swift; sourceTree = "<group>"; };
+		A973975D2A042EE600ED8956 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		A97397622A042FD200ED8956 /* HeadlinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesViewModel.swift; sourceTree = "<group>"; };
+		A97397642A04303400ED8956 /* HeadlinesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesListItem.swift; sourceTree = "<group>"; };
+		A97397662A0430AD00ED8956 /* HeadlinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesView.swift; sourceTree = "<group>"; };
+		A97397682A0430D000ED8956 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		A973976A2A04315600ED8956 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		A973976C2A043C3400ED8956 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		A973976E2A04422000ED8956 /* HeadlinesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesDetailView.swift; sourceTree = "<group>"; };
+		A97397702A04451D00ED8956 /* StringExtensionHTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionHTML.swift; sourceTree = "<group>"; };
+		A97397742A04455400ED8956 /* HTMLEntityMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLEntityMapping.swift; sourceTree = "<group>"; };
+		A9DA09322A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DA09342A0AA17C00AF0C6C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A9DA09362A0AA17C00AF0C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DA09412A0AA28A00AF0C6C /* Lifeguard TimesRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lifeguard TimesRelease.entitlements"; sourceTree = "<group>"; };
+		A9DA09422A0AA2B100AF0C6C /* OneSignalNotificationServiceExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtensionRelease.entitlements; sourceTree = "<group>"; };
+		A9DA09432A0AA7A200AF0C6C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A97397332A042BFD00ED8956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A973974B2A042C4B00ED8956 /* OneSignal in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DA092F2A0AA17C00AF0C6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DA09402A0AA1B300AF0C6C /* OneSignalExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A973972D2A042BFD00ED8956 = {
+			isa = PBXGroup;
+			children = (
+				A97397382A042BFD00ED8956 /* Lifeguard Times */,
+				A9DA09332A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension */,
+				A97397372A042BFD00ED8956 /* Products */,
+				A9DA093E2A0AA1B300AF0C6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A97397372A042BFD00ED8956 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A97397362A042BFD00ED8956 /* Lifeguard Times.app */,
+				A9DA09322A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A97397382A042BFD00ED8956 /* Lifeguard Times */ = {
+			isa = PBXGroup;
+			children = (
+				A9DA09412A0AA28A00AF0C6C /* Lifeguard TimesRelease.entitlements */,
+				A973974D2A042C8C00ED8956 /* Helpers */,
+				A973974C2A042C8500ED8956 /* Views */,
+				A97397482A042C2900ED8956 /* Lifeguard-Times-Info.plist */,
+				A97397472A042C2300ED8956 /* Lifeguard Times.entitlements */,
+				A97397392A042BFD00ED8956 /* Lifeguard_TimesApp.swift */,
+				A973973B2A042BFD00ED8956 /* ContentView.swift */,
+				A97397572A042D5000ED8956 /* Playlist.swift */,
+				A973975D2A042EE600ED8956 /* Feed.swift */,
+				A973973D2A042BFE00ED8956 /* Assets.xcassets */,
+				A9DA09432A0AA7A200AF0C6C /* Launch Screen.storyboard */,
+				A973973F2A042BFE00ED8956 /* Preview Content */,
+			);
+			path = "Lifeguard Times";
+			sourceTree = "<group>";
+		};
+		A973973F2A042BFE00ED8956 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A97397402A042BFE00ED8956 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A973974C2A042C8500ED8956 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A973975F2A042F6000ED8956 /* Headlines */,
+				A97397502A042D2E00ED8956 /* Video */,
+				A97397682A0430D000ED8956 /* StoryView.swift */,
+				A973976A2A04315600ED8956 /* PhotoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A973974D2A042C8C00ED8956 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A97397702A04451D00ED8956 /* StringExtensionHTML.swift */,
+				A97397742A04455400ED8956 /* HTMLEntityMapping.swift */,
+				A973975B2A042E2A00ED8956 /* WordPressXMLParser.swift */,
+				A97397592A042D7800ED8956 /* YoutubeXMLParser.swift */,
+				A973974E2A042D2200ED8956 /* WebView.swift */,
+				A973976C2A043C3400ED8956 /* MailView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A97397502A042D2E00ED8956 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				A97397512A042D2E00ED8956 /* VideoViewModel.swift */,
+				A97397522A042D2E00ED8956 /* VideoView.swift */,
+				A97397532A042D2E00ED8956 /* VideoListItem.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		A973975F2A042F6000ED8956 /* Headlines */ = {
+			isa = PBXGroup;
+			children = (
+				A97397622A042FD200ED8956 /* HeadlinesViewModel.swift */,
+				A97397662A0430AD00ED8956 /* HeadlinesView.swift */,
+				A97397642A04303400ED8956 /* HeadlinesListItem.swift */,
+				A973976E2A04422000ED8956 /* HeadlinesDetailView.swift */,
+			);
+			path = Headlines;
+			sourceTree = "<group>";
+		};
+		A9DA09332A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A9DA09422A0AA2B100AF0C6C /* OneSignalNotificationServiceExtensionRelease.entitlements */,
+				A9DA09342A0AA17C00AF0C6C /* NotificationService.swift */,
+				A9DA09362A0AA17C00AF0C6C /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		A9DA093E2A0AA1B300AF0C6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A97397352A042BFD00ED8956 /* Lifeguard Times */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97397442A042BFE00ED8956 /* Build configuration list for PBXNativeTarget "Lifeguard Times" */;
+			buildPhases = (
+				A97397322A042BFD00ED8956 /* Sources */,
+				A97397332A042BFD00ED8956 /* Frameworks */,
+				A97397342A042BFD00ED8956 /* Resources */,
+				A9DA093A2A0AA17C00AF0C6C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DA09382A0AA17C00AF0C6C /* PBXTargetDependency */,
+			);
+			name = "Lifeguard Times";
+			packageProductDependencies = (
+				A973974A2A042C4B00ED8956 /* OneSignal */,
+			);
+			productName = "Lifeguard Times";
+			productReference = A97397362A042BFD00ED8956 /* Lifeguard Times.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9DA09312A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DA093D2A0AA17C00AF0C6C /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				A9DA092E2A0AA17C00AF0C6C /* Sources */,
+				A9DA092F2A0AA17C00AF0C6C /* Frameworks */,
+				A9DA09302A0AA17C00AF0C6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+				A9DA093F2A0AA1B300AF0C6C /* OneSignalExtension */,
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = A9DA09322A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A973972E2A042BFD00ED8956 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A97397352A042BFD00ED8956 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					A9DA09312A0AA17C00AF0C6C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = A97397312A042BFD00ED8956 /* Build configuration list for PBXProject "Lifeguard Times" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A973972D2A042BFD00ED8956;
+			packageReferences = (
+				A97397492A042C4B00ED8956 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+			);
+			productRefGroup = A97397372A042BFD00ED8956 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A97397352A042BFD00ED8956 /* Lifeguard Times */,
+				A9DA09312A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A97397342A042BFD00ED8956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DA09442A0AA7A200AF0C6C /* Launch Screen.storyboard in Resources */,
+				A97397412A042BFE00ED8956 /* Preview Assets.xcassets in Resources */,
+				A973973E2A042BFE00ED8956 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DA09302A0AA17C00AF0C6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A97397322A042BFD00ED8956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97397562A042D2E00ED8956 /* VideoListItem.swift in Sources */,
+				A973975E2A042EE600ED8956 /* Feed.swift in Sources */,
+				A97397652A04303400ED8956 /* HeadlinesListItem.swift in Sources */,
+				A973976B2A04315600ED8956 /* PhotoView.swift in Sources */,
+				A973974F2A042D2200ED8956 /* WebView.swift in Sources */,
+				A97397552A042D2E00ED8956 /* VideoView.swift in Sources */,
+				A973975C2A042E2A00ED8956 /* WordPressXMLParser.swift in Sources */,
+				A973976D2A043C3400ED8956 /* MailView.swift in Sources */,
+				A97397582A042D5000ED8956 /* Playlist.swift in Sources */,
+				A973976F2A04422000ED8956 /* HeadlinesDetailView.swift in Sources */,
+				A97397672A0430AD00ED8956 /* HeadlinesView.swift in Sources */,
+				A973975A2A042D7800ED8956 /* YoutubeXMLParser.swift in Sources */,
+				A973973C2A042BFD00ED8956 /* ContentView.swift in Sources */,
+				A97397752A04455400ED8956 /* HTMLEntityMapping.swift in Sources */,
+				A97397712A04451D00ED8956 /* StringExtensionHTML.swift in Sources */,
+				A97397692A0430D000ED8956 /* StoryView.swift in Sources */,
+				A97397542A042D2E00ED8956 /* VideoViewModel.swift in Sources */,
+				A97397632A042FD200ED8956 /* HeadlinesViewModel.swift in Sources */,
+				A973973A2A042BFD00ED8956 /* Lifeguard_TimesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DA092E2A0AA17C00AF0C6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DA09352A0AA17C00AF0C6C /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9DA09382A0AA17C00AF0C6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DA09312A0AA17C00AF0C6C /* OneSignalNotificationServiceExtension */;
+			targetProxy = A9DA09372A0AA17C00AF0C6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A97397422A042BFE00ED8956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A97397432A042BFE00ED8956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A97397452A042BFE00ED8956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Lifeguard Times/Lifeguard Times.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_ASSET_PATHS = "\"Lifeguard Times/Preview Content\"";
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lifeguard-Times-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your current location to display it on the map.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boxtechstudio.lifeguardtimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A97397462A042BFE00ED8956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Lifeguard Times/Lifeguard TimesRelease.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_ASSET_PATHS = "\"Lifeguard Times/Preview Content\"";
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lifeguard-Times-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your current location to display it on the map.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boxtechstudio.lifeguardtimes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9DA093B2A0AA17C00AF0C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boxtechstudio.lifeguardtimes.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9DA093C2A0AA17C00AF0C6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtensionRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_TEAM = 78M8KAD49G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boxtechstudio.lifeguardtimes.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A97397312A042BFD00ED8956 /* Build configuration list for PBXProject "Lifeguard Times" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97397422A042BFE00ED8956 /* Debug */,
+				A97397432A042BFE00ED8956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97397442A042BFE00ED8956 /* Build configuration list for PBXNativeTarget "Lifeguard Times" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97397452A042BFE00ED8956 /* Debug */,
+				A97397462A042BFE00ED8956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DA093D2A0AA17C00AF0C6C /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DA093B2A0AA17C00AF0C6C /* Debug */,
+				A9DA093C2A0AA17C00AF0C6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A97397492A042C4B00ED8956 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A973974A2A042C4B00ED8956 /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A97397492A042C4B00ED8956 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		A9DA093F2A0AA1B300AF0C6C /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A97397492A042C4B00ED8956 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A973972E2A042BFD00ED8956 /* Project object */;
+}
