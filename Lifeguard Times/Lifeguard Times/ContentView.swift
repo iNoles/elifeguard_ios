@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ContentView: View {
+    @Environment(\.requestReview) var requestReview
+    @AppStorage("openCount") private var openCount = 0
+    
     var body: some View {
         TabView {
             HeadlinesView().tabItem {
@@ -22,7 +26,12 @@ struct ContentView: View {
             VideoView().tabItem {
                 Label("Video", image: "video_library")
             }
-        }
+        }.onAppear(perform: {
+            openCount += 1
+            if openCount == 5 {
+                requestReview()
+            }
+        })
     }
 }
 

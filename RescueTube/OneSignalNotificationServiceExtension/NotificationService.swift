@@ -21,17 +21,11 @@ class NotificationService: UNNotificationServiceExtension {
         self.bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
         if let bestAttemptContent = bestAttemptContent {
-            //If your SDK version is < 3.5.0 uncomment and use this code:
-            /*
-            OneSignal.didReceiveNotificationExtensionRequest(self.receivedRequest, with: self.bestAttemptContent)
-            contentHandler(bestAttemptContent)
-            */
-            
-            /* DEBUGGING: Uncomment the 2 lines below to check this extension is excuting
+            /* DEBUGGING: Uncomment the 2 lines below to check this extension is executing
                           Note, this extension only runs when mutable-content is set
                           Setting an attachment or action buttons automatically adds this */
-            //OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
-            //bestAttemptContent.body = "[Modified] " + bestAttemptContent.body
+            // print("Running NotificationServiceExtension")
+            // bestAttemptContent.body = "[Modified] " + bestAttemptContent.body
             
             OneSignalExtension.didReceiveNotificationExtensionRequest(self.receivedRequest, with: bestAttemptContent, withContentHandler: self.contentHandler)
         }

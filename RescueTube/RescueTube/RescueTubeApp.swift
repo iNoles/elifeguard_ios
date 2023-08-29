@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import OneSignal
+import OneSignalFramework
 
 @main
 struct RescueTubeApp: App {
@@ -21,18 +21,20 @@ struct RescueTubeApp: App {
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-       // Remove this method to stop OneSignal Debugging
-       // OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
+        // Remove this method to stop OneSignal Debugging
+        // OneSignal.Debug.setLogLevel(.LL_VERBOSE)
         
-       OneSignal.initWithLaunchOptions(launchOptions)
-       OneSignal.setAppId("89688823-ff14-4d72-b8c9-abb0f953a492")
+        // OneSignal initialization
+        OneSignal.initialize("89688823-ff14-4d72-b8c9-abb0f953a492", withLaunchOptions: launchOptions)
+          
+        // requestPermission will show the native iOS notification permission prompt.
+        // We recommend removing the following code and instead using an In-App Message to prompt for notification permission
+        OneSignal.Notifications.requestPermission({ accepted in
+            print("User accepted notifications: \(accepted)")
+        }, fallbackToSettings: true)
         
-       OneSignal.promptForPushNotifications(userResponse: { accepted in
-         print("User accepted notification: \(accepted)")
-       })
-      
-      // Set your customer userId
-      // OneSignal.setExternalUserId("userId")
+        // Login your customer with externalId
+        // OneSignal.login("EXTERNAL_ID")
       
        return true
     }

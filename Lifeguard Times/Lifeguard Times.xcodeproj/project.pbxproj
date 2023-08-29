@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A95A79AC2A9E70EC001CAC38 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = A95A79AB2A9E70EC001CAC38 /* OneSignalFramework */; };
 		A973973A2A042BFD00ED8956 /* Lifeguard_TimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397392A042BFD00ED8956 /* Lifeguard_TimesApp.swift */; };
 		A973973C2A042BFD00ED8956 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973973B2A042BFD00ED8956 /* ContentView.swift */; };
 		A973973E2A042BFE00ED8956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A973973D2A042BFE00ED8956 /* Assets.xcassets */; };
 		A97397412A042BFE00ED8956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97397402A042BFE00ED8956 /* Preview Assets.xcassets */; };
-		A973974B2A042C4B00ED8956 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = A973974A2A042C4B00ED8956 /* OneSignal */; };
 		A973974F2A042D2200ED8956 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973974E2A042D2200ED8956 /* WebView.swift */; };
 		A97397542A042D2E00ED8956 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397512A042D2E00ED8956 /* VideoViewModel.swift */; };
 		A97397552A042D2E00ED8956 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97397522A042D2E00ED8956 /* VideoView.swift */; };
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A973974B2A042C4B00ED8956 /* OneSignal in Frameworks */,
+				A95A79AC2A9E70EC001CAC38 /* OneSignalFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +239,7 @@
 			);
 			name = "Lifeguard Times";
 			packageProductDependencies = (
-				A973974A2A042C4B00ED8956 /* OneSignal */,
+				A95A79AB2A9E70EC001CAC38 /* OneSignalFramework */,
 			);
 			productName = "Lifeguard Times";
 			productReference = A97397362A042BFD00ED8956 /* Lifeguard Times.app */;
@@ -421,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -475,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -506,7 +506,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,7 +541,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,7 +565,7 @@
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +592,7 @@
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,16 +646,16 @@
 			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A973974A2A042C4B00ED8956 /* OneSignal */ = {
+		A95A79AB2A9E70EC001CAC38 /* OneSignalFramework */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A97397492A042C4B00ED8956 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
-			productName = OneSignal;
+			productName = OneSignalFramework;
 		};
 		A9DA093F2A0AA1B300AF0C6C /* OneSignalExtension */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -13,12 +13,12 @@
 		A933028129F1A8520099AD32 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933028029F1A8520099AD32 /* VideoView.swift */; };
 		A933028929F1BA930099AD32 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933028829F1BA930099AD32 /* NotificationService.swift */; };
 		A933028D29F1BA930099AD32 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A933028629F1BA930099AD32 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A933029429F1BB360099AD32 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = A933029329F1BB360099AD32 /* OneSignal */; };
 		A933029729F1BB550099AD32 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = A933029629F1BB550099AD32 /* OneSignalExtension */; };
 		A933029C29F1CA850099AD32 /* YoutubeXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933029B29F1CA850099AD32 /* YoutubeXMLParser.swift */; };
 		A933029E29F1CAF60099AD32 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933029D29F1CAF60099AD32 /* Playlist.swift */; };
 		A93302A029F1CD1C0099AD32 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933029F29F1CD1C0099AD32 /* VideoViewModel.swift */; };
 		A93302A629F1D0730099AD32 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93302A529F1D0730099AD32 /* VideoListItem.swift */; };
+		A95A79AA2A9E7035001CAC38 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = A95A79A92A9E7035001CAC38 /* OneSignalFramework */; };
 		A9A7F78B29EF0581002087D6 /* RescueTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F78A29EF0581002087D6 /* RescueTubeApp.swift */; };
 		A9A7F78D29EF0581002087D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F78C29EF0581002087D6 /* HomeView.swift */; };
 		A9A7F78F29EF0582002087D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A7F78E29EF0582002087D6 /* Assets.xcassets */; };
@@ -128,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A933029429F1BB360099AD32 /* OneSignal in Frameworks */,
+				A95A79AA2A9E7035001CAC38 /* OneSignalFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +301,7 @@
 			);
 			name = RescueTube;
 			packageProductDependencies = (
-				A933029329F1BB360099AD32 /* OneSignal */,
+				A95A79A92A9E7035001CAC38 /* OneSignalFramework */,
 			);
 			productName = RescueTube;
 			productReference = A9A7F78729EF0581002087D6 /* RescueTube.app */;
@@ -436,7 +436,7 @@
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +463,7 @@
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,21 +701,21 @@
 			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A933029329F1BB360099AD32 /* OneSignal */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A933029229F1BB360099AD32 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
-			productName = OneSignal;
-		};
 		A933029629F1BB550099AD32 /* OneSignalExtension */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A933029229F1BB360099AD32 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalExtension;
+		};
+		A95A79A92A9E7035001CAC38 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A933029229F1BB360099AD32 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
